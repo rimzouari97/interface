@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.gluonhq.charm.glisten.control.ProgressIndicator?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="885.0" stylesheets="@../../Documents/NetBeansProjects/Dashboard/src/dashboard/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.FXMLDocumentController">
+    <children>
+      <VBox prefHeight="600.0" prefWidth="292.0" style="-fx-background-color: #333645;" styleClass="sidebar">
+         <children>
+            <Label prefHeight="121.0" prefWidth="292.0" style="-fx-background-color: #333645;" text="Admin Panel" textFill="#fffefe">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Ebrima" size="23.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="108.0">
+                     <image>
+                        <Image url="@images/1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <HBox prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <FontAwesomeIcon iconName="SEARCH" size="1.5em">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <Label prefHeight="49.0" prefWidth="255.0" styleClass="btns" text="Search" textFill="#aba8a8">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+               </children></HBox>
+            <HBox prefHeight="51.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <FontAwesomeIcon iconName="DASHBOARD" size="1.5em">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <Label prefHeight="52.0" prefWidth="262.0" styleClass="btns" text="FOUNDATIONS" textFill="#b9b2b2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="53.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <FontAwesomeIcon iconName="map" size="1.5em" text="" />
+                  <Label prefHeight="50.0" prefWidth="240.0" styleClass="btns" text="MATERIALS" textFill="#b9b4b4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="185.0" prefHeight="53.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Icon content="CREDIT_CARD" prefHeight="53.0" prefWidth="40.0" />
+                  <Label prefHeight="50.0" prefWidth="240.0" styleClass="btns" text="TRANSACTIONS" textFill="#b9b4b4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="158.0" prefHeight="51.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Icon content="EVENT" prefHeight="54.0" prefWidth="45.0" />
+                  <Label prefHeight="52.0" prefWidth="262.0" styleClass="btns" text="EVENTS" textFill="#b9b2b2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="221.0" prefHeight="53.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Icon content="INSERT_COMMENT" prefHeight="53.0" prefWidth="40.0" />
+                  <Label prefHeight="50.0" prefWidth="240.0" styleClass="btns" text="SUGGESTIONS" textFill="#b9b4b4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="274.0" prefHeight="53.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Icon content="RATE_REVIEW" prefHeight="53.0" prefWidth="40.0" />
+                  <Label prefHeight="50.0" prefWidth="240.0" styleClass="btns" text="RATINGS" textFill="#b9b4b4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="292.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Icon content="VERIFIED_USER" prefHeight="47.0" prefWidth="39.0" />
+                  <Label prefHeight="67.0" prefWidth="256.0" styleClass="btns" text="USERS" textFill="#b2acac">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="100.0" prefWidth="292.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="220.0" text="Team involved" textFill="#fffcfc" />
+                  <HBox prefHeight="41.0" prefWidth="292.0">
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@images/avatar-02.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="33.0" prefWidth="76.0" text="Mimicha" textFill="#fcfcfc">
+                           <font>
+                              <Font name="Ebrima" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #00ff00; -fx-background-radius: 100%;" styleClass="round-lbl2">
+                           <HBox.margin>
+                              <Insets top="12.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="292.0">
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@images/avatar-01.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="33.0" prefWidth="78.0" text="Naw" textFill="#fffdfd" />
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #00ff00; -fx-background-radius: 100%;" styleClass="round-lbl2">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="12.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="52.0" prefWidth="265.0" style="-fx-background-color: #00A2D3; -fx-background-radius: 0px;" text="Add member" textAlignment="CENTER" textFill="#f5f6f8" textOverrun="CENTER_ELLIPSIS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <Icon content="ADD_CIRCLE" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="292.0" prefHeight="600.0" prefWidth="724.0" styleClass="parent" stylesheets="@../../Documents/NetBeansProjects/Dashboard/src/dashboard/stylesheet.css">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="724.0" style="-fx-background-color: #fff;">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+               <children>
+                  <Label layoutX="44.0" layoutY="22.0" text="Dashboard" textFill="#111111">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Icon content="NOTIFICATIONS" layoutX="633.0" layoutY="25.0" />
+                  <Icon content="SETTINGS" layoutX="678.0" layoutY="25.0" />
+                  <Label alignment="CENTER" layoutX="644.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #FE7A79; -fx-background-radius: 100%;" styleClass="round-lbl" text="8" textFill="WHITE" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="250.0" fitWidth="724.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/line-chart.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="230.0" style="-fx-background-color: rgba(0,162,211,0.3);" styleClass="card-01" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="250.0" style="-fx-background-color: #72D3FE;" text="Total Project">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" styleClass="round-box">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <ProgressIndicator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" progress="0.73" radius="73.0" style="-fx-border-color: #72D3FE; -fx-background-radius: 100%; -fx-border-radius: 100%; -fx-border-width: 5PX;" styleClass="round-box" />
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #72D3FE;" text="56%">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="230.0" style="-fx-background-color: rgba(255, 198, 108,0.3);" styleClass="card-02" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="250.0" style="-fx-background-color: #FFC66C;" text="Completed Projects">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" styleClass="round-box">
+                           <children>
+                              <ProgressIndicator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" progress="0.73" radius="73.0" style="-fx-border-color: #72D3FE; -fx-background-radius: 100%; -fx-border-radius: 100%; -fx-border-width: 5PX;" styleClass="round-box" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #FFC66C;" text="88%">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="230.0" style="-fx-background-color: rgba(69, 183, 175,0.3);" styleClass="card-03" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="250.0" style="-fx-background-color: #45B7AF;" text="Running Projects">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" styleClass="round-box">
+                           <children>
+                              <ProgressIndicator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" progress="0.73" radius="73.0" style="-fx-border-color: #72D3FE; -fx-background-radius: 100%; -fx-border-radius: 100%; -fx-border-width: 5PX;" styleClass="round-box" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #45B7AF;" text="47%">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></VBox>
+    </children>
+</AnchorPane>

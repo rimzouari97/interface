@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 mars 2020, 22:28:38
+    Author     : Memmicha
+*/
+
+
+.parent {
+   -fx-background-color: #333645; 
+}
+.parent2{
+    -fx-background-color:  #ccccff;
+}
+.btns {
+    -fx-background-color:  #ff3333;
+}
+.cross{
+    -fx-background-insets: 24px;
+}
